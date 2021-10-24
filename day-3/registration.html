@@ -27,7 +27,78 @@
         </tr>
         <tr>
             <td height="600"></td>
-            <td></td>
+            <td valign="top">
+                <h3 align="center">Registration Form</h3>
+                <hr/>
+                <table>
+                    <tr>
+                        <th>First Name</th>
+                        <td><input type="text" name="first_name"/></td>
+                    </tr>
+                    <tr>
+                        <th>Last Name</th>
+                        <td><input type="text" name="last_name"/></td>
+                    </tr>
+                    <tr>
+                        <th>Email Address</th>
+                        <td><input type="email" name="email"/></td>
+                    </tr>
+                    <tr>
+                        <th>Password</th>
+                        <td><input type="password" name="password"/></td>
+                    </tr>
+                    <tr>
+                        <th>Phone Number</th>
+                        <td><input type="number" name="phone_number"/></td>
+                    </tr>
+                    <tr>
+                        <th>Data of Birth</th>
+                        <td><input type="date" name="date_of_birth"/></td>
+                    </tr>
+                    <tr>
+                        <th>Address</th>
+                        <td>
+                            <textarea cols="20" rows="5" name="address">
+
+                            </textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>District Name</th>
+                        <td>
+                                <select name="District_name">
+                                <option>---Select District Name----</option>
+                                <optgroup label="Dhaka">
+                                    <option value="">Dhaka</option>
+                                    <option value="">Savar</option>
+                                    <option value="">Manikgonj</option>
+                                    <option value="">Gazipur</option>
+                                    <option value="">Narayangonj</option>
+                                </optgroup>
+                                <optgroup label="Savar">
+                                    <option value="">Dhaka</option>
+                                <option value="">Savar</option>
+                                <option value="">Manikgonj</option>
+                                <option value="">Gazipur</option>
+                                <option value="">Narayangonj</option>
+                                </optgroup>
+                            
+                            </select>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <th>Gender Info</th>
+                        <td>
+                            <input type="radio" checked name="gender" value="male"/>male
+                            <input type="radio" name="gender" value="female"/>female
+                            <input type="radio" name="gender" value="other"/>other
+                            
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
         </tr>
         <tr>
             <td height="50" colspan="2" align="center">
