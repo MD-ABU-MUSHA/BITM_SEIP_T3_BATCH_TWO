@@ -55,3 +55,22 @@
     background-color: aqua;
     float:left;
 }
+
+
+.div-one{
+    height: 300px;
+    width: 400px;
+    background-color: red;
+    float: left;
+    margin: 20px 10px 30px 40px;
+    color: white;
+    padding:10px;
+}
+
+
+.div-two{
+    height:400px;
+    width: 500px;
+    background-color: green;
+    float: left;
+}
