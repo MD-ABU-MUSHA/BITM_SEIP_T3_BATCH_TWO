@@ -32,3 +32,10 @@
     background-color: gray;
     float:left;
 }
+
+.box-four{
+    height: 600px;
+    width: 20%;
+    background-color: hotpink;
+    float: left;
+}
