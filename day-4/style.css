@@ -10,3 +10,17 @@
     background-color: gray;
 }
 
+.box-one{
+    height: 200px;
+    width: 20%;
+    background-color: red;
+    float:left;
+}
+
+
+.box-two{
+    height: 200px;
+    width: 80%;
+    background-color: green;
+    float:left;
+}
