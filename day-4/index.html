@@ -6,9 +6,10 @@
         <title>Registration Form</title>
     </head>
     <body>
+        
         <table border="1" width="980" align="center">
             <tr>
-                <td height="200"></td>
+                <td width="200" height="200"></td>
                 <td></td>
             </tr>
             <tr>
@@ -16,7 +17,121 @@
             </tr>
             <tr>
                 <td height="600"></td>
-                <td></td>
+                <td valign="top">
+                    <fieldset>
+                        <legend>This is my Registration Form</legend>                    
+                    <h1 align="center">Registration Form</h1>
+                    <hr>
+                    <br/>
+                    <table>
+                        <tr>
+                            <th align="left">First Name</th>
+                            <td><input readonly value="MD.ABU MUSHA" type="text" name="first_name"/></td>
+                        </tr>
+                        <tr>
+                            <th align="left">Last Name</th>
+                            <td><input list="country" type="text" name="last_name" placeholder="Enter your last name"/></td>
+                        </tr>
+                        <tr>
+                            <th align="left">Email Address</th>
+                            <td><input type="email" name="email" placeholder="enter your email"/></td>
+                        </tr>
+                        <tr>
+                            <th align="left">Password</th>
+                            <td><input type="password" name="password" placeholder="enter your password"/></td>
+                        </tr>
+                        <tr>
+                            <th align="left">Mobile Number</th>
+                            <td><input type="number" name="number" placeholder="enter your mobile number"/></td>
+                        </tr>
+                        <tr>
+                            <th align="left">Address</th>
+                            <td><textarea rows="8" cols="30" name="address">
+
+                            </textarea></td>
+                        </tr>
+                        <tr>
+                            <th align="left">Date of Birth</th>
+                            <td><input type="date" name="date_of_birth"/></td>
+                        </tr>
+                        <tr>
+                            <th align="left">District</th>
+                            <td>
+                                <select>
+                                    <option disabled selected>---Select District---</option>
+                                    <optgroup label="Dhaka">
+                                        <option value="">Dhaka</option>
+                                        <option value="">Dhaka</option>
+                                        <option value="">Dhaka</option>
+                                        <option value="">Dhaka</option>
+                                        <option value="">Dhaka</option>
+                                    </optgroup>
+                                    <optgroup label="Dinajpur">
+                                        <option value="">Dinajpur</option>
+                                        <option value="">Dinajpur</option>
+                                        <option value="">Dinajpur</option>
+                                        <option value="">Dinajpur</option>
+                                        <option value="">Dinajpur</option>
+                                        <option value="">Dinajpur</option>
+                                    </optgroup>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th align="left">Country</th>
+                            <td><input list="country" id="country" type="text" name="country_name"/></td>
+                        </tr>
+                        <tr>
+                            <th align="left">Gender</th>
+                            <td>
+                               <label><input value="male" type="radio" name="gender"/>Male</label> 
+                                <lable><input value="female" type="radio" name="gender"/>Female</lable>
+                                <label><input value="other" type="radio" name="gender"/>other</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th align="left" >Subject Name</th>
+                            <td>
+                                <label><input type="checkbox" name="checkbox"/>Bangla</label>
+                                <label><input type="checkbox" name="checkbox"/>English</label>
+                                <label><input type="checkbox" name="checkbox"/>Math</label>
+                                <label><input type="checkbox" name="checkbox"/>Chemistry</label>
+                                <label><input type="checkbox" name="checkbox"/>biology</label>
+                                <label><input type="checkbox" name="checkbox"/>physics</label>
+                                <label><input type="checkbox" name="checkbox"/>Bangla</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th align="left">Image</th>
+                            <td><input multiple type="file" accept="image/*" name="photo"/></td>
+                        </tr>
+                        <tr>
+                            <th align="left">Color</th>
+                            <td><input type="color" name="color"/></td>
+                        </tr>
+                        <tr>
+                            <th align="left">Save</th>
+                            <td><input value="save" type="submit" name="save"</td>
+                        </tr>
+                        <tr>
+                            <th align="left">Reset</th>
+                            <td><input type="reset" name="reset"/></td>
+                        </tr>
+                    </fieldset>
+                        <datalist id="country">
+                            <option value="Musha"/>
+                            <option value="Bangladesh"/>
+                            <option value="Nahid"/>
+                            <option value="canada"/>
+                            <option value="Nitish"/>
+                            <option value="Pakisthan"/>
+                            <option value="India"/>
+                            <option value="Srilanka"/>
+                        </datalist>
+
+                        
+                    </table>
+                </td>
             </tr>
             <tr>
                 <td colspan="2" height="40"?
