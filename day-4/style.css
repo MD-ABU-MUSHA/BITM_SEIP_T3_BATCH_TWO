@@ -24,3 +24,11 @@
     background-color: green;
     float:left;
 }
+
+
+.box-three{
+    height: 50px;
+    width: 100%;
+    background-color: gray;
+    float:left;
+}
