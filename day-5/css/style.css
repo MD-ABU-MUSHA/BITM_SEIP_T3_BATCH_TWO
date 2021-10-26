@@ -1,0 +1,24 @@
+.div-one{
+    height: 200px;
+    width: 300px;
+    background-color:red;
+    float: left;
+    /* margin: 20px 30px 40px 50px; */
+    /* margin-top:30px; */
+    /* margin: auto; */
+    padding-top: 85px;
+    padding-left: 110px;
+    box-sizing: border-box;
+    border: 10px solid black;
+
+    
+}
+
+
+.div-two{
+    height: 300px;
+    width: 500px;
+    background-color:GREEN;
+    float: left;
+
+}
