@@ -31,7 +31,7 @@ body{
 .row:after{
     content:' ';
     clear: both;
-    dispaly: block;
+    display: block;
 }
 
 
