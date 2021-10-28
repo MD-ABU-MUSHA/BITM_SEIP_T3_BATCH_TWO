@@ -211,4 +211,5 @@
 .py-50{padding-top:50px; padding-bottom: 50px;}
 .service-heading{
     border-right:1px solid gray;
+    padding-right:10px;
 }
