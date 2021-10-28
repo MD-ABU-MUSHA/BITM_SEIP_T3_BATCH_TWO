@@ -213,3 +213,8 @@
     border-right:1px solid gray;
     padding-right:10px;
 }
+
+
+.service-content p{
+    padding-left:10px;
+}
