@@ -62,7 +62,7 @@
 /* Content color & Bg color */
 .bg-light-dark{background-color: rgb(22, 16, 16);}
 .bg-light{background-color: lightgray;}
-.bg-light{background-color: black;}
+.bg-dark{background-color: black;}
 .text-white{color:white;}
 .float-right{float:right;}
 .float-left{float:left;}
@@ -84,4 +84,16 @@
     float:left;
     padding-top: 4px;
     padding-bottom: 3px;
+}
+
+
+.header-content p{
+    padding-left: 10px;
+}
+
+
+.header-content-line{
+    width: 5px;
+    height: 40px;
+
 }
