@@ -65,8 +65,9 @@
 .bg-light{background-color: lightgray;}
 /* .bg-light{background-color: #F4F4F6;} */
 .bg-dark{background-color: black;}
-/* .text-white{color:white;} */
-.text-white{color:#608997;}
+.text-white{color:white;}
+/* .text-white{color:#608997;} */
+.text-black{color:black;}
 .float-right{float:right;}
 .float-left{float:left;}
 .font-sans{font-family:sans-serif;}
@@ -177,15 +178,17 @@
 
 .banner-content-wrapper p{
     font-style: italic;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 
 
 .btn{
-    background-color: red;
+    /* background-color: red; */
     text-decoration:none;
     padding: 10px;
-    color:white;
+  
+    text-transform: uppercase;
+    border-radius:5px;
 }
 
 
@@ -193,4 +196,19 @@
     margin-left: 10px;
     border-left: 1px solid gray;
     padding-left: 10px;
+}
+
+
+.bg-yellow{
+    background-color: yellow;
+}
+
+.bg-sky{
+    background-color: turquoise;
+}
+.mr-10{margin-right:10px;}
+.text-right{text-align: right;}
+.py-50{padding-top:50px; padding-bottom: 50px;}
+.service-heading{
+    border-right:1px solid gray;
 }
