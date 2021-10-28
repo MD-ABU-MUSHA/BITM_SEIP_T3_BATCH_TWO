@@ -65,7 +65,7 @@
 .bg-light{background-color: black;}
 .text-white{color:white;}
 .float-right{float:right;}
-.gloat-left{float:left;}
+.float-left{float:left;}
 .font-sans{font-family:sans-serif;}
 
 /* padding */
@@ -76,3 +76,12 @@
 /* Margin  */
 .mr-5{margin-right: 5px;}
 .ml-5{margin-left: 5px;}
+
+
+
+
+.header-content{
+    float:left;
+    padding-top: 4px;
+    padding-bottom: 3px;
+}
