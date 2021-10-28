@@ -212,11 +212,12 @@
 .service-heading{
     border-right:1px solid gray;
     padding-right:10px;
+    text-transform: uppercase;
 }
 
 
 .service-content p{
     padding-left:10px;
 
-    
+
 }
