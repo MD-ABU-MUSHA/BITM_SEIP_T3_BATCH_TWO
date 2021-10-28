@@ -164,3 +164,18 @@
     margin-left: 250px;
     color:white;
 }
+
+
+.banner-content-line{
+    width: 120px;
+    height:2px;
+    background-color: yellow;
+    margin-top: 15px;
+    margin-bottom:15px;
+}
+
+
+.banner-content-wrapper p{
+    font-style: italic;
+    margin-bottom: 15px;
+}
