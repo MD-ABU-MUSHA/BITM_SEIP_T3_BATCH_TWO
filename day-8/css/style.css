@@ -236,11 +236,11 @@
 .service-content-image{
     width:25%;
     position: absolute;
-    left: 70px;
-    z-index: 999;
-    margin-top: 6px;
+    left: 20px;
+    z-index: 1;
+    margin-top: 5px;
     background-color: white;
-    padding:8px 5px 5px 8px;
+    padding:8px 5px 4px 8px;
 }
 
 
