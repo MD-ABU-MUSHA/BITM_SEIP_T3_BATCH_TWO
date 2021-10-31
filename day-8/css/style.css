@@ -43,6 +43,15 @@
 
 
 
+
+.container-fluid{
+    width: 100%;
+    height:auto;
+    margin: 0 auto;
+}
+
+
+
 .h-50{height:50px;}
 .h-100{height:100px;}
 .h-150{height:150px;}
@@ -124,6 +133,7 @@
 
 .menu{
     float:left;
+    
 }
 
 
@@ -289,3 +299,20 @@
 
 
 .mb-20{margin-bottom: 20px;}
+
+
+
+
+/* About Section */
+
+.about-image{
+    height: 450px;
+    background-image: url(../img/5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+}
+
+
