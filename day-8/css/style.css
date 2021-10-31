@@ -311,8 +311,26 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    padding:10px 10px 10px 0;
 
 
 }
 
+.about-border{
+    height:100%;
+    border:1px solid white;
+    border-left:0;
+}
 
+
+
+.about-content{
+    background-color:red;
+    width:40%;
+    background-color: #13A0B2;
+    color: whtie;
+    font-weight: bolder;
+    padding:10px 20px;
+    font-family: sans-serif;
+
+}
