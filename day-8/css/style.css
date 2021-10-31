@@ -312,6 +312,7 @@
     background-repeat: no-repeat;
     background-position: center;
     padding:10px 10px 10px 0;
+    position: relative;
 
 
 }
@@ -332,5 +333,9 @@
     font-weight: bolder;
     padding:10px 20px;
     font-family: sans-serif;
+    position:absolute;
+    right:0px;
+    top:40px;
+
 
 }
