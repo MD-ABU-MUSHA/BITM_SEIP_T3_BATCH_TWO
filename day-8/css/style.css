@@ -238,19 +238,21 @@
     position: absolute;
     left: 20px;
     z-index: 1;
-    margin-top: 5px;
+    margin-top: 20px;
     background-color: white;
     padding:8px 5px 4px 8px;
 }
 
 
 .service-content-image img{
-    width: 100%;     
+    width: 100%;  
+    /* height:120px;    */
 }
 
 
 .service-content-text{
     width:75%;
+    height:175px;
     background-color: white;
     font-family:suns-serif;
     padding-left:10%;
@@ -259,6 +261,11 @@
     box-shadow: 0px 0px 5px gray;
     position: relative;
     left:143px;
+}
+
+
+.service-content-text:hover{
+    background-color: #12A0B1;
 }
 
 
@@ -274,3 +281,6 @@
 .mt-40{
     margin-top: 40px;
 }
+
+
+.mb-20{margin-bottom: 20px;}
