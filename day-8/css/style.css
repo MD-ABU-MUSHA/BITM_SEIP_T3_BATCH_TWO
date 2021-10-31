@@ -339,3 +339,27 @@
 
 
 }
+
+
+/* Business Details */
+.business-details{
+    height: 400px;
+    background-image: url(../img/sm-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+}
+
+
+.fluid-bg{
+    height:100%;
+    background-color:rgba(0,0,0,0.4);
+}
+
+
+.small-business{
+    height: 100%;
+    background-color:rgba(0,0,0,0.5)
+}
