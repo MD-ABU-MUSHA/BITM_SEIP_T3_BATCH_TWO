@@ -191,6 +191,11 @@
     border-radius:5px;
 }
 
+.btn:hover{
+    background-color: #212832;
+    color:white;
+}
+
 
 .my-icon{
     margin-left: 10px;
