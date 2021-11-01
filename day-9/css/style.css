@@ -21,4 +21,11 @@ top:0px;*/
 
 
 
-
+/* index2 */
+@media screen and (min-width:700px){
+    .box-one{
+        height:200px;
+        width:300px;
+        background-color:rgba(253, 0, 0, 0.8);
+    }
+}
