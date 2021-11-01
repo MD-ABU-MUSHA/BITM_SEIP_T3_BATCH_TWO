@@ -59,9 +59,7 @@
         width:100%;
     }
 
-    .d-hide{
-        display:none;
-    }
+    
 }
 
 
@@ -79,6 +77,23 @@
     .col-m10{width: 83.33%;}
     .col-m11{width: 91.66%;}
     .col-m12{width: 100%;}
+
+    .d-hide{
+        display:none;
+    }
+
+
+    .search-position{
+        position:absolute;
+        right:0px;
+    }
+    
+    
+    .p-relative{
+        
+        position:relative;
+    
+    }
 }
 
 
@@ -100,13 +115,3 @@
 
 
 
-.search-position{
-    position:absolute;
-    right:0px;
-}
-
-
-.p-relative{
-    position:relative;
-
-}
