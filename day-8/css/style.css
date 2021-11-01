@@ -133,6 +133,8 @@
 
 .menu{
     float:left;
+    position:sticky;
+    top:0px;
     
 }
 
