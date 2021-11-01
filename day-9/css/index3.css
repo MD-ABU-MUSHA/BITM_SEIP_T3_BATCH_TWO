@@ -115,3 +115,52 @@
 
 
 
+@keyframes musa{
+    0%{background-image: url(../img/1_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+    20%{
+        background-image: url(../img/2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        }
+    50%{
+        background-image:url(../img/3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        
+    }
+    80%{
+        background-image:url(../img/4.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    100%{
+        background-image: url(../img/7.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;}
+}
+
+.box-one{
+    height:300px;   
+    width:450px;
+    background-color:gray;
+    float:left;
+    animation-name:musa;
+    animation-duration:3s;
+    animation-iteration-count: infinite;
+}
+
+
+
+
+
+
+
+
