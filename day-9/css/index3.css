@@ -58,6 +58,10 @@
     [class*='col-']{
         width:100%;
     }
+
+    .d-hide{
+        display:none;
+    }
 }
 
 
