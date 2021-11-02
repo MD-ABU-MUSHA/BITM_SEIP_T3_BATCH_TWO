@@ -122,10 +122,19 @@
 }
 
 
+@font-face {
+    font-family: bitm;
+    src: url(../font/Lora-Italic-VariableFont_wght.ttf);
+}
+
+
+
+
 .content{
     color:white;
     text-align: justify;
     padding:100px;
+    font-family:bitm;
 }
 
 
@@ -135,3 +144,5 @@
     height:400px;
     background-color:green;
 }
+
+
