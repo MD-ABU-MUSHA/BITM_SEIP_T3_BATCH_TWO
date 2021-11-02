@@ -10,7 +10,10 @@
     margin:100px;
     /* transform: scale(1); */
     /* transform:rotate(0deg); */
-    transform:rotateX(0deg);
+    /* transform:rotateX(0deg); */
+    /* transform:rotateY(0deg); */
+    /* transform:skew(-10deg); */
+    transform:skewY(-10deg);
     transition: all 2s;
 }
 
@@ -20,6 +23,8 @@
 .box-one:hover{
     /* transform:scale(1.5); */
     /* transform:rotate(45deg); */
-    transform:rotateX(180deg);
+    /* transform:rotateX(180deg); */
+    /* transform:rotateY(90deg); */
     /* background-color:green; */
+    transform:skew(10deg);
 }
