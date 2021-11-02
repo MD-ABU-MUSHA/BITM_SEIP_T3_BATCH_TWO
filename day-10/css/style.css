@@ -86,3 +86,14 @@
     margin-top:100px;
     transform: skewY(-30deg);
 }
+
+
+
+
+.div{
+    float:left;
+    height:300px;
+    width:400px;
+    margin:100px;
+    background:linear-gradient(red,green,blue);
+}
