@@ -1,0 +1,18 @@
+.box-one{
+    float:left;
+    width:300px;
+    height:300px;
+    background-color:red;
+    margin:100px;
+    /* transform: scale(1); */
+    transform:rotate(45deg);
+    transition: all 2s;
+}
+
+
+
+
+.box-one:hover{
+    transform:scale(1.5);
+    background-color:green;
+}
