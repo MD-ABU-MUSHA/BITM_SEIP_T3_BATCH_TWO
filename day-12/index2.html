@@ -18,7 +18,7 @@
 <body>
     <div>
         <button type="button" id="showBtn">Show</button>
-        <button type="button" id="hidBtn">Hide</button>
+        <button type="button" id="hideBtn">Hide</button>
 
 
         <div class="box" id="container">
@@ -31,6 +31,18 @@
 
     <script>
         var hideBtn = document.getElementById('hideBtn');
+        hideBtn.onclick = function()
+        {
+            var container = document.getElementById('container');
+            container.style.display='none';
+        }
+
+
+        var showBtn = document.getElementById('showBtn');
+        showBtn.onclick = function(){
+            var container = document.getElementById('container');
+            container.style.display='block';
+        }
     </script>
 </body>
 </html>
