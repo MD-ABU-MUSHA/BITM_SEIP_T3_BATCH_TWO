@@ -7,6 +7,8 @@
     <title>Document</title>
 </head>
 <body>
+
+    <div id="content"></div>
     <script>
         // while
         // var i = 10;
@@ -60,27 +62,45 @@
 
 
 
-        function test(x,y)
-        {
+        // function test(x,y)
+        // {
             
-            var z = x+y;
-            document.write(z);
+        //     var z = x+y;
+        //     document.write(z);
+        // }
+
+
+        // test(10,20);
+        // document.write('<br/>');
+
+        // test(30,30);
+        // document.write('<br/>');
+
+        // test(10,50);
+        // document.write('<br/>');
+
+        // test(60,40);
+        // document.write('<br/>');
+
+        
+        function test(height,width,bg)
+        {
+            var div = document.createElement("div");
+            div.style.height = height+'px';
+            div.style.width = width+'px';
+            div.style.backgroundColor = bg;
+            div.style.float ='left';
+            div.style.marginRight= '10';
+
+            var content = document.getElementById('content');
+            content.append(div);
         }
 
 
-        test(10,20);
-        document.write('<br/>');
 
-        test(30,30);
-        document.write('<br/>');
-
-        test(10,50);
-        document.write('<br/>');
-
-        test(60,40);
-        document.write('<br/>');
-
-        
+        test(100,300,'red');
+        test(400,200,'green');
+        test(50,60,'black');
 
 
 
