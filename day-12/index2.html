@@ -13,6 +13,13 @@
             padding: 40px;
         
         }
+
+        .box-one{
+            height:300px;
+            width:300px;
+            background-color: green;
+            padding:40px;
+        }
     </style>
 </head>
 <body>
@@ -21,11 +28,22 @@
         <button type="button" id="hideBtn">Hide</button>
 
 
-        <div class="box" id="container">
+        <div class="box" id="div">
             <h1>Hello BITM</h1>
 
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia omnis numquam laborum? Minima accusamus quibusdam expedita illum ad facilis illo quae fuga, tempora suscipit sed atque voluptatem fugit velit dicta.</p>
         </div>
+    </div><br><br/>
+    <div>
+        <button type="button" id="redBtn">Red</button>
+        <button type="button" id="greenBtn">Green</button>
+        <button type="button" id="blueBtn">Blue</button>
+        <button type="button" id="defultBtn">Defult</button>
+
+        <div  class="box-one" id="container">
+
+        </div>
+
     </div>
 
 
@@ -33,16 +51,56 @@
         var hideBtn = document.getElementById('hideBtn');
         hideBtn.onclick = function()
         {
-            var container = document.getElementById('container');
-            container.style.display='none';
+            var div = document.getElementById('div');
+            div.style.display ='none';
         }
 
 
         var showBtn = document.getElementById('showBtn');
         showBtn.onclick = function(){
-            var container = document.getElementById('container');
-            container.style.display='block';
+            var div = document.getElementById('div');
+            div.style.display ='block';
         }
-    </script>
+
+
+
+
+        var redBtn = document.getElementById('redBtn');
+        redBtn.onclick = function(){
+            var container = document.getElementById('container');
+            container.style.backgroundColor='red';
+            container.style.borderRadius='50px';
+        }
+
+
+
+        var greenBtn = document.getElementById('greenBtn');
+        greenBtn.onclick = function(){
+            var container = document.getElementById('container');
+            container.style.backgroundColor='green';
+            container.style.borderRadius='50px';
+        }
+
+
+
+
+        var blueBtn = document.getElementById('blueBtn');
+        blueBtn.onclick = function(){
+            var container = document.getElementById('container');
+            container.style.backgroundColor='blue';
+            container.style.borderRadius='50px';
+        }
+
+
+        
+        var defultBtn = document.getElementById('defultBtn');
+        defultBtn.onclick = function(){
+            var container = document.getElementById('container');
+            container.style.backgroundColor='black';
+        }
+        
+        
+        
+        </script>
 </body>
 </html>
