@@ -141,25 +141,47 @@
 
 
 
-        var person = {
-            name: 'Mosiur',
-            city:'Dhaka',
-            mobile: 0179382206,
+        // var person = {
+        //     name: 'Mosiur',
+        //     city:'Dhaka',
+        //     mobile: 0179382206,
 
-            walk: function()
-            {
-                document.write(' In walk...');
-            },
+        //     walk: function()
+        //     {
+        //         document.write(' In walk...');
+        //     },
 
-            speak: function()
+        //     speak: function()
+        //     {
+        //         document.write('Hello Speak....');
+        //     }
+
+        // };
+
+        // document.write(person.name);
+        // person.walk();
+
+            // collection of object
+
+        var students =[
+        {name:'habib', email: 'habib@gmail.com', mobile:'01793822069'},
+        {name:'Mohammad Ali', email: 'habib@gmail.com', mobile:'01793822069'},
+        {name:'Musha Ibrahim', email: 'habib@gmail.com', mobile:'01793822069'},
+        {name:'Anondo', email: 'habib@gmail.com', mobile:'01793822069'},
+        {name:'Opurbo', email: 'habib@gmail.com', mobile:'01793822069'},
+        ];
+
+
+            // document.write(students[0].email);
+
+
+
+            for(key in students)
             {
-                document.write('Hello Speak....');
+                document.write(students[key].name+' '+students[key].email+' '+students[key].mobile+'<br/>');
+                break;
             }
 
-        };
-
-        document.write(person.name);
-        person.walk();
 
 
 
