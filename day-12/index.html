@@ -127,14 +127,39 @@
 
 
 
-        var data = 10; //single variable
-        document.write(data);
+        // var data = 10; //single variable
+        // document.write(data);
+        // document.write('<br/>');
 
-        var data = [10,20,30] //Array
-        document.write(data[0]);
+        // var data = [10,20,30] //Array
+        // document.write(data[0]);
+        // document.write('<br/>');
 
-        var data ={name:'habib', city:'dhaka'};//object
-        document.write(data.name);
+        // var data ={name:'habib', city:'dhaka'};//object
+        // document.write(data.name+' '+data.name);
+        // document.write('<br/>');
+
+
+
+        var person = {
+            name: 'Mosiur',
+            city:'Dhaka',
+            mobile: 0179382206,
+
+            walk: function()
+            {
+                document.write(' In walk...');
+            },
+
+            speak: function()
+            {
+                document.write('Hello Speak....');
+            }
+
+        };
+
+        document.write(person.name);
+        person.walk();
 
 
 
