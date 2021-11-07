@@ -27,23 +27,25 @@
     </table>
     <hr/>
 
-    <table border='1' width=''>
+    <table border='1' width='800'>
         <tr>
             <th>First Name</th>
             <th>Last Name</th>
             <th>Full Name</th>
         </tr>
         <tr>
-            <td><input type="text"/></td>
-            <td><input type="text"/></td>
+            <td><input id='name1' type="text"/></td>
+            <td><input id="name2" type="text"/></td>
             <td></td>
         </tr>
         <tr>
-            <td height="50"></td>
-            <td></td>
-            <td></td>
+            <td id="show1" height="50"></td>
+            <td id="show2"></td>
+            <td id="show3"></td>
         </tr>
     </table>
+
+
 
 
 
@@ -55,6 +57,37 @@
             var fullName = firstName +" "+ lastName;
             document.getElementById('fullName').value=fullName;
         }
+
+
+
+        var name1 = document.getElementById('name1');
+        name1.onkeyup = function(){
+            var show1 = document.getElementById('show1');
+            show1.innerHTML = name1.value;         
+        }
+
+
+        var name2 = document.getElementById('name2');
+        name2.onkeyup = function(){
+            var show2 = document.getElementById('show2');
+            show2.innerHTML = name2.value;
+        }
+
+
+
+        name2.onblur = function(){
+            var show1 = document.getElementById('show1').innerHTML;
+            var show2 = document.getElementById('show2').innerHTML;
+            var fullName = document.getElementById('show3');
+            fullName.innerHTML = show1+' '+show2;
+        }
+
+
+
+
+        
+        
+
     </script>
 </body>
 </html>
