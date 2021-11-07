@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .test{color:red;}
+    </style>
 </head>
 <body>
     <h1 id='bitm' class="">This is a heading......</h1>
@@ -65,34 +68,66 @@
 
         var input = document.getElementById('input');
         input.onmouseover = function(){
-            input.value="musha";
+            input.value="congratulation";
+            if(input.value == 'congratulation')
+            {
+                input.setAttribute('class','test');
+            }else{
+                input.setAttribute('class',' ');
+            }
+            
         }
 
 
 
         var input = document.getElementById('input');
         input.onclick = function(){
-            input.value="Hello Bd";
+            if(input.value == 'congratulation')
+            {
+                input.setAttribute('class','test');
+            }else{
+                input.setAttribute('class',' ');
+            }
+            input.value=" ";
         }
 
 
 
         var input = document.getElementById('input');
         input.onmouseleave = function(){
-            input.value="Nahid";
+            if(input.value == 'congratulation')
+            {
+                input.setAttribute('class','test');
+            }else{
+                input.setAttribute('class',' ');
+            }
+            input.value=' ';
         }
 
 
 
         var input = document.getElementById('input');
         input.onkeyup = function(){
-            input.value="Habib sir";
+            if(input.value == 'congratulation')
+            {
+                input.setAttribute('class','test');
+            }else{
+                input.setAttribute('class',' ');
+            }
+            var h1 = document.getElementById('bitm');
+            h1.innerHTML= input.value;
         }
 
 
         var input = document.getElementById('input');
         input.onblur = function(){
-            input.value="Mohammod ali Sir";
+            if(input.value == 'congratulation')
+            {
+                input.setAttribute('class','test');
+            }else{
+                input.setAttribute('class',' ');
+            }
+            input.setAttribute('class','test');
         }
 
 
