@@ -14,7 +14,7 @@
         </tr>
         <tr>
             <th>Last Name</th>
-            <td><input type="text" name="lst_name" id="lasttName"/></td>
+            <td><input type="text" name="lst_name" id="lastName"/></td>
         </tr>
         <tr>
             <th>Full Name</th>
@@ -25,5 +25,36 @@
             <td><input type="button" name="btn" id="btn" value="Submit"/></td>
         </tr>
     </table>
+    <hr/>
+
+    <table border='1' width=''>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Full Name</th>
+        </tr>
+        <tr>
+            <td><input type="text"/></td>
+            <td><input type="text"/></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td height="50"></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+
+
+    <script>
+        var btn = document.getElementById('btn');
+        btn.onclick = function(){
+            var firstName = document.getElementById('firstName').value;
+            var lastName = document.getElementById('lastName').value;
+            var fullName = firstName +" "+ lastName;
+            document.getElementById('fullName').value=fullName;
+        }
+    </script>
 </body>
 </html>
