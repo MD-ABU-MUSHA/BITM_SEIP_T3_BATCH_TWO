@@ -25,7 +25,7 @@
         <tr>
             <th>Result</th>
             <td>
-                <input type="number" id="result"/>
+                <input type="number" readonly id="result"/>
             </td>
         </tr>
         <tr>
@@ -57,7 +57,7 @@
                     result = firstNumber + secondNumber;
                     break;
                 case '-':
-                    result = firstNumber + secondNumber;
+                    result = firstNumber - secondNumber;
                     break;
                 case '*':
                     result = firstNumber * secondNumber;
@@ -69,7 +69,7 @@
                     result = firstNumber % secondNumber;
                     break;
             }
-
+            document.getElementById('result').value = result;
 
 
         }
