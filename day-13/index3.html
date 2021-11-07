@@ -31,12 +31,12 @@
         <tr>
             <th></th>
             <td>
-                <input type="button" id="plusBtn" onclick="mycalculator()" value="+"/>
-                <input type="button" id="minusBtn" onclick="mycalculator()" value="-"/>
-                <input type="button" id="multiplicationBtn" onclick="mycalculator()" value="*"/>
-                <input type="button" id="divisionBtn" onclick="mycalculator()" value="/"/>
-                <input type="button" id="modulusBtn" onclick="mycalculator()" value="%"/>
-                <input type="button" id="reset" onclick="mycalculator()" value="reset"/>
+                <input type="button" id="plusBtn" onclick="mycalculator('+')" value="+"/>
+                <input type="button" id="minusBtn" onclick="mycalculator('-')" value="-"/>
+                <input type="button" id="multiplicationBtn" onclick="mycalculator('*')" value="*"/>
+                <input type="button" id="divisionBtn" onclick="mycalculator('/')" value="/"/>
+                <input type="button" id="modulusBtn" onclick="mycalculator('%')" value="%"/>
+                <input type="button" id="reset"  value="reset"/>
             </td>
         </tr>
     </table>
@@ -44,13 +44,34 @@
 
 
     <script>
-        function mycalculator(){
+        function mycalculator(operator){
             var firstNumber = Number(document.getElementById('firstNumber').value);
             var secondNumber = Number(document.getElementById('secondNumber').value);
             // alert(firstNumber);
 
 
-            
+            var result= 0;
+            switch(operator)
+            {
+                case '+':
+                    result = firstNumber + secondNumber;
+                    break;
+                case '-':
+                    result = firstNumber + secondNumber;
+                    break;
+                case '*':
+                    result = firstNumber * secondNumber;
+                    break;
+                case '/':
+                    result = firstNumber / secondNumber;
+                    break;
+                case '%':
+                    result = firstNumber % secondNumber;
+                    break;
+            }
+
+
+
         }
     </script>
 </body>
