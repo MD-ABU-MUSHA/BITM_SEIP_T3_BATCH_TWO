@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Basic Calculator</h1>
+
+    <table>
+        <tr>
+            <th>First Number</th>
+            <td>
+                <input type="number" id="firstNumber"/>
+            </td>
+        </tr>
+        <tr>
+            <th>Second Number</th>
+            <td>
+                <input type="number" id="secondNumber"/>
+            </td>
+        </tr>
+        <tr>
+            <th>Result</th>
+            <td>
+                <input type="number" id="result"/>
+            </td>
+        </tr>
+        <tr>
+            <th></th>
+            <td>
+                <input type="button" id="plusBtn" onclick="mycalculator()" value="+"/>
+                <input type="button" id="minusBtn" onclick="mycalculator()" value="-"/>
+                <input type="button" id="multiplicationBtn" onclick="mycalculator()" value="*"/>
+                <input type="button" id="divisionBtn" onclick="mycalculator()" value="/"/>
+                <input type="button" id="modulusBtn" onclick="mycalculator()" value="%"/>
+                <input type="button" id="reset" onclick="mycalculator()" value="reset"/>
+            </td>
+        </tr>
+    </table>
+
+
+
+    <script>
+        function mycalculator(){
+            var firstNumber = Number(document.getElementById('firstNumber').value);
+            var secondNumber = Number(document.getElementById('secondNumber').value);
+            // alert(firstNumber);
+
+
+            
+        }
+    </script>
+</body>
+</html>
