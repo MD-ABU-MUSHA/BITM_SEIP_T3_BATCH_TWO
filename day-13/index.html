@@ -7,9 +7,110 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>This is a heading......</h1>
+    <h1 id='bitm' class="">This is a heading......</h1>
+    <input type="text" id="input"/>
+    <img src="" id="img"/>
+
+    <!-- 
+        All Website flow this tag
+        
+        <h1 id='bitm'>This is a heading......</h1>
+        <input type="text" id=""/>
+        <img src="" id=""/>
+     -->
 
     <script>
+
+        // Input 
+        // var basis = document.getElementById('input');
+        // basis.value = "hello World";
+
+
+
+    
+        /*Opening & closing Tag*/
+
+        // var basis = document.getElementById('bitm');
+        // basis.innerHTML = 'Hello World';
+        // basis.setAttribute('class','demo');
+
+        // console.log(basis.getAttribute('id'));
+        // console.log(basis.innerHTML);
+
+
+
+        /*Image Tag*/
+        // var basis = document.getElementById('img');
+        // basis.setAttribute('src','img/2.jpg');
+
+        
+
+        var basis = document.getElementById('bitm');
+        basis.onmouseover= function(){
+            basis.innerHTML = 'This is new content';
+        }
+
+
+        basis.onclick = function(){
+            basis.innerHTML = 'Hello Bangladesh';
+        }
+
+
+        basis.onmouseleave = function(){
+            basis.innerHTML = 'Today is sunday........';
+        }
+
+
+
+
+        var input = document.getElementById('input');
+        input.onmouseover = function(){
+            input.value="musha";
+        }
+
+
+
+        var input = document.getElementById('input');
+        input.onclick = function(){
+            input.value="Hello Bd";
+        }
+
+
+
+        var input = document.getElementById('input');
+        input.onmouseleave = function(){
+            input.value="Nahid";
+        }
+
+
+
+        var input = document.getElementById('input');
+        input.onkeyup = function(){
+            input.value="Habib sir";
+        }
+
+
+        var input = document.getElementById('input');
+        input.onblur = function(){
+            input.value="Mohammod ali Sir";
+        }
+
+
+
+       
+
+
+
+        // window.addEventListener('onmouserover',function(){
+
+        // });
+
+
+        // window.attachEvent('onmovuseover',function(){
+
+        // });
+
+
 
     </script>
 
