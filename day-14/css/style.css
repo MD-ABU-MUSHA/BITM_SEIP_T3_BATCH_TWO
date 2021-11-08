@@ -94,3 +94,9 @@
 .d-none{
     display:none;
 }
+
+
+.active{
+    color:black!important;
+    background-color:white!important;
+}
