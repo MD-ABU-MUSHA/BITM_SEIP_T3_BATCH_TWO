@@ -1,0 +1,15 @@
+*
+{
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+}
+
+.wrapper{
+    float:left;
+    width:60%;
+    height:500px;
+    background-color:rgb(230, 196, 196);
+    margin-left:20%;
+
+}
