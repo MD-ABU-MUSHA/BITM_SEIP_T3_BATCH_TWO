@@ -13,3 +13,33 @@
     margin-left:20%;
 
 }
+
+
+
+
+.left-content{
+    width:20%;
+    height:100%;
+    float:left;
+    background-color:gainsboro;
+}
+
+
+.right-content{
+    float:left;
+    width:80%;
+    height:100%;
+    background-color:lemonchiffon;
+}
+
+
+
+.left-content ul{
+    list-style-type: none;
+
+}
+
+
+.left-content ul li{
+    border: 1px solid red;
+}
