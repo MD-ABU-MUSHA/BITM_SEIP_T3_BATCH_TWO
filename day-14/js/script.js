@@ -34,15 +34,13 @@
                     if(i%2 == 0){
                         result = result + i +' '; 
                     }
-                       
-                     
                 }
             }
             
             document.getElementById('result').innerHTML= result;
-         }
+}
          
-         else{
+        else{
             if(temp == 'odd'){
                 
                 for(i = startingNumber; i>=endingNumber; i--){
@@ -59,8 +57,8 @@
                     }
                     
             }document.getElementById('result').innerHTML= result;
-         }
-  }
+        }
+}
 
 
 
