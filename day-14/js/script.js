@@ -1,7 +1,8 @@
-var submit = document.getElementById('submit');
+    var submit = document.getElementById('submit');
     submit.onclick= function(){
         var startingNumber = Number(document.getElementById('firstNumber').value);
         var endingNumber = Number(document.getElementById('endingNumber').value);
+         var choice = document.getElementsByName('choice');
         var result = document.getElementById('result').innerHTML;
          
         var i;
@@ -10,6 +11,7 @@ var submit = document.getElementById('submit');
 
          if(startingNumber<=endingNumber){
             for(i = startingNumber; i<=endingNumber; i++){
+                
                 result = result + i +' ';
                 
                  
@@ -27,3 +29,7 @@ var submit = document.getElementById('submit');
        
 
     }
+
+
+
+
