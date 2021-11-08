@@ -110,6 +110,8 @@ aboutBtn.onclick = function(){
 }
 
 
+
+
 contactBtn.onclick = function(){
     event.preventDefault();
     home.setAttribute('class','content-wrapper d-none');
