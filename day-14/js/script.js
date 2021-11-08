@@ -21,27 +21,48 @@
 
 
          if(startingNumber<=endingNumber){
-            for(i = startingNumber; i<=endingNumber; i++){
-                
-                result = result + i +' ';
-                
-                 
+
+            if(temp== 'even'){
+                for(i = startingNumber; i<=endingNumber; i++){
+                    if(i/2 != 0){
+                        result = result + i +' '; 
+                    }
+                      
+                     
+                }
+            }else{
+
+                for(i = startingNumber; i<=endingNumber; i++){
+                    if(i%2 == 0){
+                        result = result + i +' '; 
+                    }
+                       
+                     
+                }
             }
-            document.getElementById('result').innerHTML= result;
-         }else{
             
-            for(i = startingNumber; i>=endingNumber; i--){
-                result = result + i +' ';
-                
-                 
-            }
             document.getElementById('result').innerHTML= result;
          }
-        
-       
+         
+         else{
+            if(temp == 'odd'){
+                
+                for(i = startingNumber; i>=endingNumber; i--){
+                    if(i%2 != 0){
+                        result = result + i +' ';
+                    }
+                    
+            }
+        }else{
 
-    }
-
+                for(i = startingNumber; i>=endingNumber; i--)
+                    if(i%2 == 0){
+                        result = result + i +' ';
+                    }
+                    
+            }document.getElementById('result').innerHTML= result;
+         }
+  }
 
 
 
