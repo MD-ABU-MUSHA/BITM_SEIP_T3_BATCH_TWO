@@ -3,9 +3,7 @@
         var startingNumber = Number(document.getElementById('firstNumber').value);
         var endingNumber = Number(document.getElementById('endingNumber').value);
         
-         
-         
-        var i;
+          var i;
         var result = '';
 
         var choice = document.getElementsByName('choice');
