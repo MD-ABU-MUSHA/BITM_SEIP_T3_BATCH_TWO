@@ -68,6 +68,8 @@
 
 
 
+
+
 // Index2 Start
 
 var homeBtn = document.getElementById('homeBtn');
@@ -123,3 +125,6 @@ contactBtn.onclick = function(){
     aboutBtn.setAttribute('class','');
     contactBtn.setAttribute('class','active');
 }
+
+
+
