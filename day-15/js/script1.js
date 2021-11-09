@@ -103,6 +103,9 @@ newBtn.onclick = function(){
     div.append(img);
 
 
+
+
+
     div.style.height = height + 'px';
     div.style.width = width + 'px';
     div.style.backgroundColor = color;
