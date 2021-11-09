@@ -78,6 +78,10 @@ newBtn.onclick = function(){
     var float = document.getElementById('float').value;
 
 
+
+    
+
+
     var div = document.createElement('div');
     div.style.height = height + 'px';
     div.style.width = width + 'px';
