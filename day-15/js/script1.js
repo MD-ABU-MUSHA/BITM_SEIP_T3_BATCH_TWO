@@ -85,6 +85,17 @@ newBtn.onclick = function(){
 
 
     var div = document.createElement('div');
+    var h1 = document.createElement('h1');
+    var img = document.createElement('img');
+    var p = document.createElement('p');
+
+    h1.innerHTML = 'This is a heading';
+    p.innerHTML = 'this is a pera';
+    img.setAttribute('src','img/2.jpg');
+
+    
+
+
     div.style.height = height + 'px';
     div.style.width = width + 'px';
     div.style.backgroundColor = color;
