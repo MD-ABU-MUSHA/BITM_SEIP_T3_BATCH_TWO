@@ -91,10 +91,12 @@ newBtn.onclick = function(){
     div.style.borderRadius = radius + 'px';
     div.style.float = float;
 
-
-
     var custom = document.getElementById('custom');
     custom.append(div);
+
+
+
+    
      
 
 
