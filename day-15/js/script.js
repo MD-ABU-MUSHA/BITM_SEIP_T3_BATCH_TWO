@@ -57,6 +57,7 @@ var submit = document.getElementById('Submit');
             var watch = hour +":"+ minutes +":"+ second;
 
             document.getElementById('watch').innerHTML=result+"|"+watch;
+
     }
 
     setInterval(test, 1000);
@@ -64,3 +65,13 @@ var submit = document.getElementById('Submit');
 
 
     // setTimeout(test,1000);
+
+
+
+
+
+
+
+
+
+
