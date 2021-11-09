@@ -60,3 +60,39 @@ setInterval(changeImage, 18000);
 
 
 
+
+
+
+
+
+
+// enter height & width 
+
+
+var newBtn = document.getElementById('newBtn');
+newBtn.onclick = function(){
+    var height = document.getElementById('height').value;
+    var width = document.getElementById('width').value;
+    var color = document.getElementById('color').value;
+    var radius = document.getElementById('radius').value;
+    var float = document.getElementById('float').value;
+
+
+    var div = document.createElement('div');
+    div.style.height = height + 'px';
+    div.style.width = width + 'px';
+    div.style.backgroundColor = color;
+    div.style.borderRadius = radius + 'px';
+    div.style.float = float;
+
+
+
+    var custom = document.getElementById('custom');
+    custom.append(div);
+     
+
+
+
+}
+
+
