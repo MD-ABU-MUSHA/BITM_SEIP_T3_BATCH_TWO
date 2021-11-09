@@ -92,8 +92,15 @@ newBtn.onclick = function(){
     h1.innerHTML = 'This is a heading';
     p.innerHTML = 'this is a pera';
     img.setAttribute('src','img/2.jpg');
+    img.style.height = '200px';
+    img.style.width = '300px';
 
-    
+
+
+
+    div.append(h1);
+    div.append(p);
+    div.append(img);
 
 
     div.style.height = height + 'px';
@@ -101,6 +108,7 @@ newBtn.onclick = function(){
     div.style.backgroundColor = color;
     div.style.borderRadius = radius + 'px';
     div.style.float = float;
+    
 
     var custom = document.getElementById('custom');
     custom.append(div);
