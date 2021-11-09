@@ -66,7 +66,9 @@ setInterval(changeImage, 18000);
 
 
 
-// enter height & width 
+
+
+// enter height & width  JavaScript CustomDiv
 
 
 var newBtn = document.getElementById('newBtn');
@@ -79,7 +81,7 @@ newBtn.onclick = function(){
 
 
 
-    
+
 
 
     var div = document.createElement('div');
