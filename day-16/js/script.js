@@ -94,7 +94,7 @@ var products = [
 var select = '';
 select += '<select>';
 $.each(products, function(key,value){
-    select += '<option></option>';
+    select += '<option>'+value.name+'</option>';
 })
 
 select += '</select>'
