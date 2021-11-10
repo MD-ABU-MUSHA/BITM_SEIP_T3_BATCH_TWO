@@ -21,3 +21,33 @@ var btn = document.getElementById('btn');
 btn.onclick = function(){
     createNewElement();
 }
+
+
+
+
+
+
+
+
+
+/* $= (selector). Action();
+
+    $ : Jqery Object
+    selector : HTML element selector
+    . : JS object
+    Action() : Jquery Method
+*/
+
+
+
+/* Row Java scruot */
+// var h1 = document.getElementById('h1');
+// h1.onclick = function(){
+//     h1.style.color = 'red';
+// }
+
+
+/*jquery */
+$('#h1').click(function(){
+    $(this).css('color','red');
+});
