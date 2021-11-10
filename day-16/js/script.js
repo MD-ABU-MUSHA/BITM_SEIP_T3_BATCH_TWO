@@ -112,4 +112,7 @@ $('#addBtn').click(function(){
     tr += '<td>400</td>';
     tr += '<td><button type="button" class="remove-btn">-</button></td>';
     tr +=  '</tr>';
+
+
+    console.log(tr);
 });
