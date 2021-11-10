@@ -114,5 +114,8 @@ $('#addBtn').click(function(){
     tr +=  '</tr>';
 
 
-    console.log(tr);
+    $('#res').append(tr);
 });
+
+
+$
