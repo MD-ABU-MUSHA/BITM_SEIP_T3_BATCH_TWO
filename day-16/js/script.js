@@ -123,6 +123,11 @@ $(document).on('click','.remove-btn',function(){
     $(this).closest('tr').remove();
 });
 
+// anather way
+// $(document).on('click','.remove-btn',function(){
+//     $(.remove-btn).closest('tr').remove();
+// });
+
 // $('.remove-btn').click(function(){
 //     $(this).closest('tr').remove();
 // });
