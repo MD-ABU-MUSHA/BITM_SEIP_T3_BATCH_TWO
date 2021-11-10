@@ -128,6 +128,8 @@ $(document).on('click','.remove-btn',function(){
 //     $(.remove-btn).closest('tr').remove();
 // });
 
+
+//Wrong
 // $('.remove-btn').click(function(){
 //     $(this).closest('tr').remove();
 // });
