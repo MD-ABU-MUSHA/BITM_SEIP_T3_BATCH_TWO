@@ -69,11 +69,11 @@ $('#btn').click(function(){
 
 
 $('#btnOne').click(function(){
-    var firstName = $('#firstName').val();
+    var firstName = $('#firstName').val();//Return val when no perameter
     var lastName = $('#lastName').val();
 
 
 
     var result = firstName +' '+lastName;
     $('#fullName').val(result);
-});
+});            
