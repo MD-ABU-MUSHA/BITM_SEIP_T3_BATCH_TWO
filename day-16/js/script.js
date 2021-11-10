@@ -89,3 +89,15 @@ var products = [
     {id: 3, name: 'T-shirt', price: 1200},
     {id: 4, name: 'football', price: 1500},
 ];
+
+
+var select = '';
+select += '<select>';
+$.each(products, function(key,value){
+    select += '<option></option>';
+})
+
+select += '</select>'
+
+
+$('#td1').append(select);
