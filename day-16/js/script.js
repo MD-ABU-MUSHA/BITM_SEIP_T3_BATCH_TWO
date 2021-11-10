@@ -118,6 +118,11 @@ $('#addBtn').click(function(){
 });
 
 
-$('.remove-btn').click(function(){
+
+$(document).on('click','.remove-btn',function(){
     $(this).closest('tr').remove();
 });
+
+// $('.remove-btn').click(function(){
+//     $(this).closest('tr').remove();
+// });
