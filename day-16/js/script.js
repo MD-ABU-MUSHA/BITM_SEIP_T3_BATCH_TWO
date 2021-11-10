@@ -101,3 +101,15 @@ select += '</select>'
 
 
 $('#td1').append(select);
+
+
+$('#addBtn').click(function(){
+    var tr = '';
+    tr += '<tr>';
+    tr += '<td>Name</td>';
+    tr += '<td>200</td>';
+    tr += '<td>2</td>';
+    tr += '<td>400</td>';
+    tr += '<td><button type="button" class="remove-btn">-</button></td>';
+    tr +=  '</tr>';
+});
