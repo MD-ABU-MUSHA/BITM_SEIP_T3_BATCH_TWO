@@ -77,3 +77,15 @@ $('#btnOne').click(function(){
     var result = firstName +' '+lastName;
     $('#fullName').val(result);
 });            
+
+
+
+
+
+
+var products = [
+    {id: 1, name: 'Shirt', Price: 2000},
+    {id: 2, name: 'Saree', price: 4000},
+    {id: 3, name: 'T-shirt', price: 1200},
+    {id: 4, name: 'football', price: 1500},
+];
