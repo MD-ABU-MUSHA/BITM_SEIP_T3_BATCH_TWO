@@ -71,9 +71,9 @@ $('#addBtn').click(function(){
 
 select += '</select>'
     tr += '</td>';
-    tr += '<td><input type="number" basis="'+index+'" id="price'+index+'"/></td>';
+    tr += '<td><input type="number" basis="'+index+'"  onkeyup="productPriceUpdate(this)" id="price'+index+'"/></td>';
     tr += '<td><input type="number" basis="'+index+'" onkeyup="updateTotalPriceByQty(this)" id="qty'+index+'"/</td>';
-    tr += '<td><input type="text" readonly id="total'+index+'"/</td>';
+    tr += '<td><input type="text" readonly  id="total'+index+'"/</td>';
     tr += '<td><button type="button" class="remove-btn">-</button></td>';
     tr +=  '</tr>';
 
@@ -135,9 +135,22 @@ function updateTotalPriceByQty(input)
 {
     var index = $(input).attr('basis');
     // alert(index);
-    var qty = $(input).attr('basis');
     var qty = $(input).val();
     var price = $('#price'+index).val();
     var total = price * qty;
     $('#total'+index).val(total); 
+}
+
+
+
+/*product price Update*/
+function productPriceUpdate(input)
+{
+    var index = $(input).attr('basis');
+    // alert(index);
+    var price = $(input).val();
+    var qty = $('#qty'+index).val();
+    var total = price * qty;
+    $('#total'+index).val(total); 
+    
 }
