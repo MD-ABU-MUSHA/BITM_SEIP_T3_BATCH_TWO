@@ -73,12 +73,13 @@ select += '</select>'
     tr += '</td>';
     tr += '<td><input type="number" basis="'+index+'" id="price'+index+'"/></td>';
     tr += '<td><input type="number" basis="'+index+'" id="qty'+index+'"/</td>';
-    tr += '<td><input type="text" readonly id="total"/</td>';
+    tr += '<td><input type="text" readonly id="total'+index+'"/</td>';
     tr += '<td><button type="button" class="remove-btn">-</button></td>';
     tr +=  '</tr>';
 
 
     $('#res').append(tr);
+    index++;
 });
 
 
