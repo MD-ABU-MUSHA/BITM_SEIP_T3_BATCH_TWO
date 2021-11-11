@@ -122,10 +122,13 @@ var index = $(select).attr('basis'); // attr attribute value return kore
 // console.log(product);
 
 
+
 $('#price'+index).val(product.price);
 $('#qty'+index).val(1);
 $('#total'+index).val(product.price*1);
 }
+
+
 
 
 
