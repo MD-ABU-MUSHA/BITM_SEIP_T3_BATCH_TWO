@@ -37,7 +37,7 @@ var products = [
 
 
 var select = '';
-select += '<select>';
+select += '<select onchange="setPriceQuantityAndTotalPrice()">';
 select += '<option  disabled selected> -- Select Product -- </option>';
 $.each(products, function(key,value){
     select += '<option>'+value.name+'</option>';
@@ -53,7 +53,7 @@ $('#addBtn').click(function(){
     var tr = '';
     tr += '<tr>';
     tr += '<td>';
-    tr += '<select>';
+    tr += '<select onchange="setPriceQuantityAndTotalPrice()">';
     tr += '<option  disabled selected> -- Select Product -- </option>';
     $.each(products, function(key,value){
         tr += '<option>'+value.name+'</option>';
@@ -87,3 +87,11 @@ $(document).on('click','.remove-btn',function(){
 // $('.remove-btn').click(function(){
 //     $(this).closest('tr').remove();
 // });
+
+
+
+
+function setPriceQuantityAndTotalPrice()
+{
+    alert("hello");
+}
