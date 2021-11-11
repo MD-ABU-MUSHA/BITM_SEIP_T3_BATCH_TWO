@@ -37,7 +37,7 @@ var products = [
 
 
 var select = '';
-select += '<select onchange="setPriceQuantityAndTotalPrice(this.value)">';
+select += '<select basis="1" onchange="setPriceQuantityAndTotalPrice(this.value, this)">';
 select += '<option  disabled selected> -- Select Product -- </option>';
 $.each(products, function(key,value){
     select += '<option value="'+value.id+'">'+value.name+'</option>';
@@ -60,7 +60,7 @@ $('#addBtn').click(function(){
     var tr = '';
     tr += '<tr align="center">';
     tr += '<td>';
-    tr += '<select onchange="setPriceQuantityAndTotalPrice(this.value)">';
+    tr += '<select basis="'+index+'" onchange="setPriceQuantityAndTotalPrice(this.value, this)">';
     tr += '<option  disabled selected> -- Select Product -- </option>';
     $.each(products, function(key,value){
         tr += '<option value="'+value.id+'" >'+value.name+'</option>';
@@ -107,16 +107,20 @@ $(document).on('click','.remove-btn',function(){
 
 
 //value = product id
+// Select = html select element
 
-function setPriceQuantityAndTotalPrice(value)
+function setPriceQuantityAndTotalPrice(value, select)
 {
     // alert(value);
     // find();      full object nia ashe
     // findIndex();     index nia ashe
 
-
+// console.log(select);
   var product = products.find(product => {return product.id == value});
 //   console.log(product);
+var index = $(select).attr('basis'); // attr attribute value return kore
+
+
 $('#price').val(product.price);
 $('#qty').val(1);
 $('#total').val(product.price*1);
