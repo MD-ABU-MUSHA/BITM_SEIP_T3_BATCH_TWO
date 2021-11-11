@@ -119,9 +119,10 @@ function setPriceQuantityAndTotalPrice(value, select)
   var product = products.find(product => {return product.id == value});
 //   console.log(product);
 var index = $(select).attr('basis'); // attr attribute value return kore
+// console.log(product);
 
 
-$('#price').val(product.price);
-$('#qty').val(1);
-$('#total').val(product.price*1);
+$('#price'+index).val(product.price);
+$('#qty'+index).val(1);
+$('#total'+index).val(product.price*1);
 }
