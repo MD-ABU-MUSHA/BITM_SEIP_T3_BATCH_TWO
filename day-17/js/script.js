@@ -72,7 +72,7 @@ $('#addBtn').click(function(){
 select += '</select>'
     tr += '</td>';
     tr += '<td><input type="number" basis="'+index+'" id="price'+index+'"/></td>';
-    tr += '<td><input type="number" basis="'+index+'" id="qty'+index+'"/</td>';
+    tr += '<td><input type="number" basis="'+index+'" onkeyup="updateTotalPriceByQty(this)" id="qty'+index+'"/</td>';
     tr += '<td><input type="text" readonly id="total'+index+'"/</td>';
     tr += '<td><button type="button" class="remove-btn">-</button></td>';
     tr +=  '</tr>';
@@ -125,4 +125,19 @@ var index = $(select).attr('basis'); // attr attribute value return kore
 $('#price'+index).val(product.price);
 $('#qty'+index).val(1);
 $('#total'+index).val(product.price*1);
+}
+
+
+
+
+/* Quntity update*/
+function updateTotalPriceByQty(input)
+{
+    var index = $(input).attr('basis');
+    // alert(index);
+    var qty = $(input).attr('basis');
+    var qty = $(input).val();
+    var price = $('#price'+index).val();
+    var total = price * qty;
+    $('#total'+index).val(total); 
 }
