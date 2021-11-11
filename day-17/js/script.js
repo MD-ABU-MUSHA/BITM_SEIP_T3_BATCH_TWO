@@ -37,10 +37,10 @@ var products = [
 
 
 var select = '';
-select += '<select onchange="setPriceQuantityAndTotalPrice()">';
+select += '<select onchange="setPriceQuantityAndTotalPrice(this.value)">';
 select += '<option  disabled selected> -- Select Product -- </option>';
 $.each(products, function(key,value){
-    select += '<option>'+value.name+'</option>';
+    select += '<option value="'+value.id+'">'+value.name+'</option>';
 });
 
 select += '</select>'
@@ -48,16 +48,25 @@ select += '</select>'
 
 $('#td1').append(select);
 
+
+
+
+
+
+
 /*===============New Row ADD=================*/
 $('#addBtn').click(function(){
     var tr = '';
-    tr += '<tr>';
+    tr += '<tr align="center">';
     tr += '<td>';
-    tr += '<select onchange="setPriceQuantityAndTotalPrice()">';
+    tr += '<select onchange="setPriceQuantityAndTotalPrice(this.value)">';
     tr += '<option  disabled selected> -- Select Product -- </option>';
     $.each(products, function(key,value){
-        tr += '<option>'+value.name+'</option>';
+        tr += '<option value="'+value.id+'" >'+value.name+'</option>';
     });
+
+
+
 
 select += '</select>'
     tr += '</td>';
@@ -70,6 +79,10 @@ select += '</select>'
 
     $('#res').append(tr);
 });
+
+
+
+
 
 
 
@@ -91,7 +104,14 @@ $(document).on('click','.remove-btn',function(){
 
 
 
-function setPriceQuantityAndTotalPrice()
+//value = product id
+
+function setPriceQuantityAndTotalPrice(value)
 {
-    alert("hello");
+    // alert(value);
+    // find();      full object nia ashe
+    // findIndex();     index nia ashe
+
+
+  products.find(product => {return product.id == value});
 }
