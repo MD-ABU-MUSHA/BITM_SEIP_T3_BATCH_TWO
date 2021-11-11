@@ -28,7 +28,7 @@ $('#btnOne').click(function(){
 
 
 var products = [
-    {id: 1, name: 'Shirt', Price: 2000},
+    {id: 1, name: 'Shirt', price: 2000},
     {id: 2, name: 'Saree', price: 4000},
     {id: 3, name: 'T-shirt', price: 1200},
     {id: 4, name: 'football', price: 1500},
@@ -113,5 +113,9 @@ function setPriceQuantityAndTotalPrice(value)
     // findIndex();     index nia ashe
 
 
-  products.find(product => {return product.id == value});
+  var product = products.find(product => {return product.id == value});
+//   console.log(product);
+$('#price').val(product.price);
+$('#qty').val(1);
+$('#total').val(product.price*1);
 }
