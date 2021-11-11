@@ -55,6 +55,7 @@ $('#td1').append(select);
 
 
 /*===============New Row ADD=================*/
+var index = 2;
 $('#addBtn').click(function(){
     var tr = '';
     tr += '<tr align="center">';
@@ -70,9 +71,9 @@ $('#addBtn').click(function(){
 
 select += '</select>'
     tr += '</td>';
-    tr += '<td>200</td>';
-    tr += '<td>2</td>';
-    tr += '<td>400</td>';
+    tr += '<td><input type="number" basis="'+index+'" id="price'+index+'"/></td>';
+    tr += '<td><input type="number" basis="'+index+'" id="qty'+index+'"/</td>';
+    tr += '<td><input type="text" readonly id="total"/</td>';
     tr += '<td><button type="button" class="remove-btn">-</button></td>';
     tr +=  '</tr>';
 
