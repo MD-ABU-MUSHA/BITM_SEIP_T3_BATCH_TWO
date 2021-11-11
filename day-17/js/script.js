@@ -95,6 +95,7 @@ select += '</select>'
 
 $(document).on('click','.remove-btn',function(){
     $(this).closest('tr').remove();
+    setGrandTotal();
 });
 
 // anather way
@@ -132,6 +133,8 @@ var index = $(select).attr('basis'); // attr attribute value return kore
 $('#price'+index).val(product.price);
 $('#qty'+index).val(1);
 $('#total'+index).val(product.price*1);
+
+setGrandTotal();
 }
 
 
@@ -149,6 +152,7 @@ function updateTotalPriceByQty(input)
     var price = $('#price'+index).val();
     var total = price * qty;
     $('#total'+index).val(total); 
+    setGrandTotal();
 }
 
 
@@ -163,13 +167,19 @@ function productPriceUpdate(input)
     var qty = $('#qty'+index).val();
     var total = price * qty;
     $('#total'+index).val(total); 
+    setGrandTotal();
     
 }
 
 
 
+/*Grand Total*/
 
-function setGrandTotal(){
+function setGrandTotal()
+{ 
     var sum = 0;
-    $('.item-total-price')
+    $('.item-total-price').each(function(){
+        sum = sum + Number($(this).val());
+    });
+    $('#grandTotal').text(sum);
 }
