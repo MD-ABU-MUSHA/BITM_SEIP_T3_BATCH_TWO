@@ -1,7 +1,7 @@
 function checkFirstName(){
     var firstName = $('#firstName').val();
-
-    if(firstName.length >= 2 && firstName.length <=15)
+    var regex = /^[a-zA-Z0-99 ]{2,15}$/;
+    if(regex.test(firstName))
     {
         $('#firstNameError').text(' ');
         return true;
@@ -11,6 +11,18 @@ function checkFirstName(){
     }
 }
 
+
+
+
+
+
+
 $('#firstName').keyup(function(){
     checkFirstName();
+});
+
+
+
+$('#registrationForm').submit(function(){
+    return false;
 });
