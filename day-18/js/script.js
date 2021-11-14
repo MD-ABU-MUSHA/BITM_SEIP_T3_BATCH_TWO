@@ -36,8 +36,10 @@ function checkEmail(){
     if(regex.test(emailValue))
     {
         $('#emailError').text(' ');
+        return true;
     }else{
         $('#emailError').text('Email is not Valid');
+        return false;
     }
 
 
@@ -51,12 +53,72 @@ function checkPassword(){
     if(regex.test(password))
     {
         $('#passwordError').text(' ');
+        return true;
     }else{
         $('#passwordError').text('password is not valid');
+        return false;
     }
 }
 
 
+
+function checkConfirmPassword(){
+    var confirmPassword = $('#confirmPassword').val();
+    var password = $('#password').val();
+    if(password == confirmPassword)
+    {
+        $('#confirmPasswordError').text(' ');
+        return true;
+    }else{
+        $('#confirmPasswordError').text('Sorry.. Password & confirm Password are not same ');
+        return false;
+    }
+}
+
+
+
+
+function checkPhoneNumber(){
+    var phoneNumber = $('#phoneNumber').val();
+    var regularExpression = /^\+?(88)?0?1[3456789][0-9]{8}\b/g;
+    if(regularExpression.test(phoneNumber)){
+        $('#phoneNumberError').text(' ');
+        return true;
+    }else{
+        $('#phoneNumberError').text('Sorry.. Phone number format is not valid');
+        return false;
+    }
+}
+
+
+
+function checkDistrict(){
+    var districtName = $('EdistrictName').val();
+    if(districtName = null)
+    {
+        $('#districtNameError').text('Sorry..District name is not valid');
+        return false;
+    }else{
+        $('#districtNameError').text(' ');
+        return true;
+    }
+}
+
+
+
+
+function checkGender()
+{
+    var gender = $('input[name="gender"]:checked').val();
+    if(gender.length > 0)
+    {
+        $('#genderError').text(' ');
+        return true;
+    }else{
+        $('#genderError').text('Sorry..Please select your gender');
+        return false;
+    }
+}
 
 
 
@@ -85,7 +147,45 @@ $('#password').keyup(function(){
 });
 
 
+$('#showHide').click(function(){
+  var typeValue =   $('#password').attr('type');
+    if(typeValue == 'password'){
+        $('#password').attr('type','text');
+    }else{
+        $('#password').attr('type','password');
+    }
+});
+
+
+
+
+$('#confirmPassword').keyup(function(){
+    checkConfirmPassword();
+});
+
+
+
+$('#phoneNumber').keyup(function(){
+    checkPhoneNumber();
+});
+
+
+
+
+
+
+
+
+
+
+
 
 $('#registrationForm').submit(function(){
-    return false;
+    if(checkFirstName() && checklastName() && checkEmail() && checkPassword() && checkPhoneNumber() &&  checkConfirmPassword() && checkDistrict() && checkGender())
+    {
+        return true;
+    }else{
+        return false;
+    }
+    
 });

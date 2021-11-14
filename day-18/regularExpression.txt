@@ -5,3 +5,8 @@ reular expression for email validation in javascript
 
 
 https://stackoverflow.com/questions/940577/javascript-regular-expression-email-validation
+
+
+
+
+https://www.regextester.com/106874
