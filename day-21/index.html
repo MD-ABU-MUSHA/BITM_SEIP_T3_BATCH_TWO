@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <title>Bootstrap</title>
+    <style>
+        .h-200{height:200px;}
+        .h-400{height: 500px;}
+        .my-caption{
+            background-color: rgba(0,0,0,0.5);
+            bottom:90px;
+        }
+    </style>
+</head>
+<body>
+    
+
+<!-- <section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-4 h-200 bg-info">LOGO</div>
+            <div class="col-md-9 col-sm-8 h-200 bg-primary">BANNER</div>
+        </div>
+    </div>
+</section> -->
+
+
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <div class="container">        
+            <a href="#" class="navbar-brand">LOGO</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ml-auto">
+                    <li><a href="" class="nav-link">HOME</a></li>
+                    <li><a href="" class="nav-link">ABOUT</a></li>
+                    <li class="dropdown"><a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">SERVICE</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="" class="dropdown-item">Service One</a></li>
+                            <li><a href="" class="dropdown-item">Service Two</a></li>
+                            <li><a href="" class="dropdown-item">Service Three</a></li>
+                            <li><a href="" class="dropdown-item">Service Four</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="" class="nav-link">GALLERY</a></li>
+                    <li><a href="" class="nav-link">CONTACT</a></li>
+                    <li><a href="" class="nav-link">REGISTRSTION</a></li>
+                    <li><a href="" class="nav-link">LOGIN</a></li>
+                </ul>
+            </div>
+            
+    </div>
+    
+</nav>
+
+
+
+
+
+<!-- Slider  -->
+<section>
+    <div id="mainSlider" class="carousel slide" data-ride="carousel" data-interval="1800">
+        <ol class="carousel-indicators">
+            <li data-target="#mainSlider" data-slide-to="0" class="active"></li>
+            <li data-target="#mainSlider" data-slide-to="1"></li>
+            <li data-target="#mainSlider" data-slide-to="2"></li>
+            <li data-target="#mainSlider" data-slide-to="3"></li>
+            <li data-target="#mainSlider" data-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item  active">
+                <img src="img/10.jpg" class="w-100 h-400" alt=""/>
+                <div class="carousel-caption my-caption">
+                    <h2>My Life My Rules</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis reiciendis ad, nulla quo ex, molestiae sunt quas ipsum, laboriosam neque tempora dicta exercitationem autem ipsa praesentium eligendi harum labore incidunt!</p>
+                    <a href="" class="btn btn-primary">Read More...</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/11.jpg" class="w-100 h-400" alt=""/>
+                <div class="carousel-caption my-caption">
+                    <h2>My Life My Rules</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis reiciendis ad, nulla quo ex, molestiae sunt quas ipsum, laboriosam neque tempora dicta exercitationem autem ipsa praesentium eligendi harum labore incidunt!</p>
+                    <a href="" class="btn btn-primary">Read More...</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/12.jpg" class="w-100 h-400" alt=""/>
+                <div class="carousel-caption my-caption">
+                    <h2>My Life My Rules</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis reiciendis ad, nulla quo ex, molestiae sunt quas ipsum, laboriosam neque tempora dicta exercitationem autem ipsa praesentium eligendi harum labore incidunt!</p>
+                    <a href="" class="btn btn-primary">Read More...</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/13.jpg" class="w-100 h-400" alt=""/>
+                <div class="carousel-caption my-caption">
+                    <h2>My Life My Rules</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis reiciendis ad, nulla quo ex, molestiae sunt quas ipsum, laboriosam neque tempora dicta exercitationem autem ipsa praesentium eligendi harum labore incidunt!</p>
+                    <a href="" class="btn btn-primary">Read More...</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/14.jpg" class="w-100 h-400" alt=""/>
+                <div class="carousel-caption my-caption">
+                    <h2>My Life My Rules</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis reiciendis ad, nulla quo ex, molestiae sunt quas ipsum, laboriosam neque tempora dicta exercitationem autem ipsa praesentium eligendi harum labore incidunt!</p>
+                    <a href="" class="btn btn-primary">Read More...</a>
+                </div>
+            </div>
+        </div>
+        <a href="#mainSlider" class="carousel-control-prev" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a href="#mainSlider" class="carousel-control-next" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+</section>
+
+
+<section  class="py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div>
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item"><a href="#home" data-target="#home" data-toggle="tab" class="nav-link active">Home</a></li>
+                        <li class="nav-item"><a href="#about"   data-target="#about" data-toggle="tab" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="#gallery" data-target="#gallery" data-toggle="tab" class="nav-link">Gallery</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="home" class="tab-pane fade show active">
+                            <h1>This is a heading</h1>
+                            <p class="text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident perferendis repellat officiis nesciunt doloribus, et eius earum deserunt commodi necessitatibus nam totam nostrum velit. Ducimus harum iste et modi voluptates!</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis delectus magni unde ab excepturi optio distinctio. Modi, maxime vitae eius molestiae et hic harum, eligendi dolore dolorum non temporibus deleniti?</p>
+                        </div>
+                        <div id="about" class="tab-pane fade">
+                            <h1>This is a About</h1>
+                            <p class="text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident perferendis repellat officiis nesciunt doloribus, et eius earum deserunt commodi necessitatibus nam totam nostrum velit. Ducimus harum iste et modi voluptates!</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis delectus magni unde ab excepturi optio distinctio. Modi, maxime vitae eius molestiae et hic harum, eligendi dolore dolorum non temporibus deleniti?</p>
+                        </div>
+                        <div id="gallery" class="tab-pane fade">
+                            <h1>This is a Gallery</h1>
+                            <p class="text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident perferendis repellat officiis nesciunt doloribus, et eius earum deserunt commodi necessitatibus nam totam nostrum velit. Ducimus harum iste et modi voluptates!</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis delectus magni unde ab excepturi optio distinctio. Modi, maxime vitae eius molestiae et hic harum, eligendi dolore dolorum non temporibus deleniti?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="js/jquery-3.6.0.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
