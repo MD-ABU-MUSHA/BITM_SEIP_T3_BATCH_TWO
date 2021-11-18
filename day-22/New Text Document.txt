@@ -6,3 +6,11 @@ https://datatables.net/
 
 
 https://select2.org/
+
+
+
+
+https://ckeditor.com/ckeditor-4/download/
+
+
+tinymce -----https://www.tiny.cloud/
