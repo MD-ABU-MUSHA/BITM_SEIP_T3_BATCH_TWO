@@ -2,3 +2,7 @@ https://owlcarousel2.github.io/OwlCarousel2/index.html
 
 
 https://datatables.net/
+
+
+
+https://select2.org/
