@@ -8,5 +8,8 @@ $(document).ready(function() {
       autoplayTimeout: 1000,
       autoplayHoverPause: true
     });
+
+
+    $('#example').DataTable();
     
   })
