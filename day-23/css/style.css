@@ -1,0 +1,83 @@
+.header-image{
+     
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+    
+
+}
+
+
+.container-fluid{
+    width:100%;
+    height:auto;
+    margin:auto;    
+}
+
+
+.header-bottom{
+    background-image: url('../img/pexels-roman-odintsov-5674479.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+    height:400px;
+    width:100%;
+}
+
+
+
+.header-content-position{
+    position:relative;
+}
+
+.hader-content-wrapper{
+    position:absolute;
+    top:100px;
+    left:100px;
+}
+
+
+
+
+.our-industry{
+    background-image: url('../img/1.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+    height:400px;
+    width:100%;
+}
+
+
+.border-custom{
+    height:7px;
+    width:80px;
+    background-color:green;
+    margin-bottom: 30px;
+    margin-top:10px;
+   
+   
+    
+    
+
+}
+
+
+.family{
+    background-image: url('../img/pexels-pixabay-39691.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+    height:400px;
+    width:100%;
+}
+
+
+.margin-left-client{
+    margin-left:-3px;
+}
+
+
+.client-margin{
+    margin-left:450px;
+}
