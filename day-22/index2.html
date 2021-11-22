@@ -3,19 +3,36 @@
     <head>
         <meta charset="utf-8">
         <title>A Simple Page with CKEditor 4</title>
-        <!-- Make sure the path to CKEditor is correct. -->
-        <script src="js/ckeditor.js"></script>
+        <link rel="stylesheet" href="css/bootstrap.css"/>
+        <link rel="stylesheet" href="css/samples.css"/>
     </head>
     <body>
-        <form>
-            <textarea name="editor1" id="editor1" rows="10" cols="80">
-                This is my textarea to be replaced with CKEditor 4.
-            </textarea>
-            <script>
-                // Replace the <textarea id="editor1"> with a CKEditor 4
-                // instance, using default configuration.
-                CKEDITOR.replace( 'editor1' );
-            </script>
-        </form>
+        <section class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card card-body">
+                            <div class="form-group">
+                                <label>Description</label>
+                                <textarea id="editor" class="form-control"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+       
+      
+        <script src="js/jquery-3.6.0.js"></script>
+        <script src="js/bootstrap.bundle.js"></script>
+        <script src="js/ckeditor.js"></script>
+        <script src="js/sample.js"></script>
+        <script src="js/bootstrap.js"></script>
+
+        <script>
+            initSample();
+        </script>
     </body>
 </html>
